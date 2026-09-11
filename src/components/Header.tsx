@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "@/lib/cart";
 import { useScrollLock } from "@/lib/useScrollLock";
+import { BrandMark } from "./BrandMark";
 import { SearchDrawer } from "./SearchDrawer";
 
 type NavItem = {
@@ -67,7 +68,7 @@ export function Header() {
           </button>
 
           <Link href="/" className="flex min-w-0 items-center gap-2">
-            <Logo />
+            <BrandMark compact />
           </Link>
 
           <nav className="ml-6 hidden flex-1 items-center gap-1 lg:flex">
@@ -143,7 +144,7 @@ export function Header() {
           />
           <div className="absolute inset-y-0 left-0 flex w-[86%] max-w-sm flex-col bg-white">
             <div className="flex h-16 items-center justify-between border-b border-line px-4">
-              <Logo />
+              <BrandMark compact />
               <button
                 type="button"
                 aria-label="Close menu"
@@ -206,19 +207,6 @@ export function Header() {
 
       <SearchDrawer open={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
-  );
-}
-
-function Logo() {
-  return (
-    <span className="flex min-w-0 items-center gap-2">
-      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-[4px] bg-ink font-display text-lg leading-none text-accent">
-        C
-      </span>
-      <span className="truncate font-display text-xl leading-none tracking-[0.04em] sm:text-2xl">
-        CardExchange<span className="text-accent-deep">Club</span>
-      </span>
-    </span>
   );
 }
 

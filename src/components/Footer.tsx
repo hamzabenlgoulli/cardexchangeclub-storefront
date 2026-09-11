@@ -1,4 +1,14 @@
 import Link from "next/link";
+import { BrandMark } from "./BrandMark";
+import {
+  ADDRESS,
+  EMAIL,
+  LEGAL_NAME,
+  PHONE,
+  PHONE_DISPLAY,
+  SITE_NAME,
+  SUPPORT_HOURS,
+} from "@/lib/site";
 
 const COLLECTION_LINKS = [
   { label: "Sports Cards", href: "/collections/sports-cards" },
@@ -25,17 +35,13 @@ export function Footer() {
     <footer className="mt-20 border-t border-line bg-surface">
       <div className="wrap grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <span className="flex items-center gap-2">
-            <span className="grid h-8 w-8 place-items-center rounded-[4px] bg-ink font-display text-lg leading-none text-accent">
-              C
-            </span>
-            <span className="font-display text-2xl leading-none tracking-[0.04em]">
-              CardExchange<span className="text-accent-deep">Club</span>
-            </span>
-          </span>
+          <BrandMark />
           <p className="mt-4 max-w-xs text-ink-muted">
             Authentic sports cards and gaming collectibles. Competitive prices, fast
             shipping, and dedicated service for collectors.
+          </p>
+          <p className="mt-3 max-w-xs text-xs text-ink-faint">
+            {SITE_NAME} is managed by {LEGAL_NAME}.
           </p>
         </div>
 
@@ -46,17 +52,17 @@ export function Footer() {
           <h3 className="font-display text-xl tracking-[0.08em]">Contact</h3>
           <ul className="mt-4 space-y-2 text-ink-muted">
             <li>
-              <a href="tel:+15550142200" className="hover:text-accent-deep">
-                +1 (555) 014-2200
+              <a href={`tel:${PHONE}`} className="hover:text-accent-deep">
+                {PHONE_DISPLAY}
               </a>
             </li>
             <li>
-              <a href="mailto:hello@cardexchangeclub.test" className="hover:text-accent-deep">
-                hello@cardexchangeclub.test
+              <a href={`mailto:${EMAIL}`} className="hover:text-accent-deep">
+                {EMAIL}
               </a>
             </li>
-            <li>1420 Collector Way, Kansas City, KS 66106</li>
-            <li className="pt-1 text-sm text-ink-faint">Support: Mon–Fri, 9am–6pm CT</li>
+            <li>{ADDRESS}</li>
+            <li className="pt-1 text-sm text-ink-faint">Support: {SUPPORT_HOURS}</li>
           </ul>
         </div>
       </div>
@@ -64,7 +70,7 @@ export function Footer() {
       <div className="border-t border-line">
         <div className="wrap flex flex-col items-center justify-between gap-4 py-5 sm:flex-row">
           <p className="text-xs text-ink-faint">
-            © {new Date().getFullYear()} CardExchangeClub. Demo storefront — not a real shop.
+            © {new Date().getFullYear()} {SITE_NAME}. Managed by {LEGAL_NAME}.
           </p>
           <ul className="flex flex-wrap items-center gap-2">
             {PAYMENTS.map((p) => (
