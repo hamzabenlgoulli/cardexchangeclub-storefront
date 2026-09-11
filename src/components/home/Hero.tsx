@@ -11,6 +11,7 @@ const FAN: { theme: ArtTheme; title: string }[] = [
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-ink text-white">
+      {/* Ambient colour wash */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-70"
@@ -25,7 +26,7 @@ export function Hero() {
           <p className="eyebrow text-accent">Trusted Marketplace</p>
 
           <h1 className="display mt-4 text-[clamp(3rem,9vw,6.5rem)] text-[#f5f5f5]">
-            The CardExchangeClub
+            Card TCG Exchange
           </h1>
 
           <p className="mt-6 max-w-xl text-base text-white/65">
@@ -44,7 +45,7 @@ export function Hero() {
 
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/15 pt-6">
             {[
-              ["4.8★", "1,847 reviews"],
+              ["4.8\u2605", "1,847 reviews"],
               ["30-Day", "returns window"],
               ["Free", "shipping over $75"],
             ].map(([value, label]) => (
@@ -56,6 +57,7 @@ export function Hero() {
           </dl>
         </div>
 
+        {/* Fanned card stack */}
         <div className="relative mx-auto flex h-[340px] w-full max-w-md items-center justify-center sm:h-[420px]">
           {FAN.map((card, i) => (
             <div

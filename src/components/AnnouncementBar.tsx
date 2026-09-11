@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 
 const MESSAGES = [
-  { icon: "🚚", strong: "Free Shipping", rest: "on orders over $75 — nationwide" },
+  { icon: "\ud83d\ude9a", strong: "Free Shipping", rest: "on orders over $75 — across the UK" },
   {
-    icon: "✅",
+    icon: "\u2705",
     strong: "Authentic Products",
     rest: "— sealed, verified, and backed by our guarantee",
   },
-  { icon: "🔄", strong: "30-Day Returns", rest: "— hassle-free on unopened items" },
-  { icon: "💬", strong: "Expert Support", rest: "— Mon–Fri from fellow collectors" },
+  { icon: "\ud83d\udd04", strong: "30-Day Returns", rest: "— hassle-free on unopened items" },
+  { icon: "\ud83d\udcac", strong: "Expert Support", rest: "— Mon–Fri from fellow collectors" },
 ];
 
 export function AnnouncementBar() {

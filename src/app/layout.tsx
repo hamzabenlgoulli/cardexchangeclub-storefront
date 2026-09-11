@@ -6,6 +6,7 @@ import { CartDrawer } from "@/components/CartDrawer";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { CartProvider } from "@/lib/cart";
+import { SITE_NAME } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,8 +24,8 @@ const bebas = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: {
-    default: "CardExchangeClub — Sports Cards, Pokémon & Magic",
-    template: "%s — CardExchangeClub",
+    default: `${SITE_NAME} — Sports Cards, Pokémon & Magic`,
+    template: `%s — ${SITE_NAME}`,
   },
   description:
     "Sealed boxes, sports cards and TCG singles — vintage classics through modern rookies. Genuine product, shipped straight.",
@@ -35,7 +36,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="en-GB"
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${bebas.variable}`}
     >

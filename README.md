@@ -1,4 +1,4 @@
-# CardExchangeClub — storefront
+# Card TCG Exchange — storefront
 
 A trading-card storefront built with Next.js 16 (App Router), React 19, TypeScript and
 Tailwind CSS v4. Deploys to Vercel with no extra configuration.
