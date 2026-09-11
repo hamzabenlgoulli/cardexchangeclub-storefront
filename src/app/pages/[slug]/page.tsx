@@ -6,8 +6,7 @@ type Section = { heading: string; body: string[] };
 type Doc = { title: string; intro: string; sections: Section[] };
 
 /**
- * Plain-language placeholder policies for the demo storefront. Replace these
- * with counsel-reviewed copy before running a real shop.
+ * Policies for Card TCG Exchange, managed by CARD & CARRY LIMITED.
  */
 const DOCS: Record<string, Doc> = {
   "shipping-policy": {
@@ -18,14 +17,14 @@ const DOCS: Record<string, Doc> = {
       {
         heading: "Processing time",
         body: [
-          "In-stock orders are picked and packed within one business day. Orders placed after 2pm CT on a Friday begin processing the following Monday.",
+          "In-stock orders are picked and packed within one business day. Orders placed after 2pm UK time on a Friday begin processing the following Monday.",
           "Pre-orders are held until the product's release date and then ship in the order they were placed.",
         ],
       },
       {
         heading: "Rates",
         body: [
-          "Shipping is free on orders over $75. Below that threshold a flat rate of $9.95 applies within the contiguous United States.",
+          "Shipping is free on orders over $75. Below that threshold a flat rate of $9.95 applies within the United Kingdom.",
           "Sealed cases ship double-boxed and are insured for their full value at no extra cost.",
         ],
       },
@@ -102,7 +101,7 @@ const DOCS: Record<string, Doc> = {
   privacy: {
     title: "Privacy Policy",
     intro:
-      "What information this site collects, why it is collected, and the choices you have.",
+      "What information Card TCG Exchange collects, why it is collected, and the choices you have. This site is managed by CARD & CARRY LIMITED.",
     sections: [
       {
         heading: "What we collect",
@@ -127,20 +126,20 @@ const DOCS: Record<string, Doc> = {
       {
         heading: "Your choices",
         body: [
-          "You can request a copy of your data or ask for it to be deleted by contacting us. Deletion requests are honoured except where records must be kept for tax purposes.",
+          "You can request a copy of your data or ask for it to be deleted by contacting CARD & CARRY LIMITED at contact@cardtcgexchange.com. Deletion requests are honoured except where records must be kept for tax purposes.",
         ],
       },
     ],
   },
   terms: {
     title: "Terms & Conditions",
-    intro: "The ground rules for buying from this store.",
+    intro: "The ground rules for buying from Card TCG Exchange, managed by CARD & CARRY LIMITED.",
     sections: [
       {
         heading: "Orders and pricing",
         body: [
           "Placing an order is an offer to buy. We accept it when the order ships. If an item is mispriced or out of stock we will contact you before charging.",
-          "Prices are shown in US dollars and include tax where applicable.",
+          "Prices are shown as listed on the site and include tax where applicable. Card TCG Exchange is managed by CARD & CARRY LIMITED, 39 Airfield Way, Weldon Park, Corby, Northamptonshire, England, NN17 3FZ.",
         ],
       },
       {
@@ -216,8 +215,7 @@ export default async function PolicyPage({ params }: Params) {
 
         <div className="rounded-card border border-line bg-surface p-6">
           <p className="text-sm text-ink-muted">
-            This is placeholder policy text for a demo storefront and is not legal
-            advice. Still have a question?{" "}
+            Card TCG Exchange is managed by CARD & CARRY LIMITED. Still have a question?{" "}
             <Link
               href="/pages/contact"
               className="font-medium text-accent-deep underline underline-offset-4"

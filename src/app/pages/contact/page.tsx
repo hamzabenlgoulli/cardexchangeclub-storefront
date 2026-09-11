@@ -1,6 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import {
+  ADDRESS_LINES,
+  EMAIL,
+  LEGAL_NAME,
+  PHONE,
+  PHONE_DISPLAY,
+  SITE_NAME,
+  SUPPORT_HOURS,
+} from "@/lib/site";
 
 const REASONS = [
   "Order status",
@@ -67,7 +76,7 @@ export default function ContactPage() {
               </div>
 
               <Field label="Order number (optional)" htmlFor="order">
-                <input id="order" name="order" className="field" placeholder="CEC-00000" />
+                <input id="order" name="order" className="field" placeholder="CTE-00000" />
               </Field>
 
               <Field label="What can we help with?" htmlFor="reason">
@@ -98,27 +107,33 @@ export default function ContactPage() {
 
         <aside className="space-y-4">
           <InfoCard title="Email">
-            <a
-              href="mailto:hello@cardexchangeclub.test"
-              className="text-accent-deep hover:underline"
-            >
-              hello@cardexchangeclub.test
+            <a href={`mailto:${EMAIL}`} className="text-accent-deep hover:underline">
+              {EMAIL}
             </a>
             <p className="mt-1 text-sm text-ink-muted">Replies within one business day.</p>
           </InfoCard>
 
           <InfoCard title="Phone">
-            <a href="tel:+15550142200" className="text-accent-deep hover:underline">
-              +1 (555) 014-2200
+            <a href={`tel:${PHONE}`} className="text-accent-deep hover:underline">
+              {PHONE_DISPLAY}
             </a>
-            <p className="mt-1 text-sm text-ink-muted">Mon–Fri, 9am–6pm CT.</p>
+            <p className="mt-1 text-sm text-ink-muted">{SUPPORT_HOURS}</p>
           </InfoCard>
 
           <InfoCard title="Address">
             <p className="text-ink-muted">
-              1420 Collector Way
-              <br />
-              Kansas City, KS 66106
+              {ADDRESS_LINES.map((line) => (
+                <span key={line}>
+                  {line}
+                  <br />
+                </span>
+              ))}
+            </p>
+          </InfoCard>
+
+          <InfoCard title="Company">
+            <p className="text-ink-muted">
+              {SITE_NAME} is managed by {LEGAL_NAME}.
             </p>
           </InfoCard>
 
