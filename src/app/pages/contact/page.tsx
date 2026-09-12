@@ -7,7 +7,6 @@ import {
   LEGAL_NAME,
   PHONE,
   PHONE_DISPLAY,
-  SITE_NAME,
   SUPPORT_HOURS,
 } from "@/lib/site";
 
@@ -117,7 +116,7 @@ export default function ContactPage() {
             <a href={`tel:${PHONE}`} className="text-accent-deep hover:underline">
               {PHONE_DISPLAY}
             </a>
-            <p className="mt-1 text-sm text-ink-muted">{SUPPORT_HOURS}</p>
+            <p className="mt-1 text-sm text-ink-muted">{SUPPORT_HOURS}.</p>
           </InfoCard>
 
           <InfoCard title="Address">
@@ -129,12 +128,7 @@ export default function ContactPage() {
                 </span>
               ))}
             </p>
-          </InfoCard>
-
-          <InfoCard title="Company">
-            <p className="text-ink-muted">
-              {SITE_NAME} is managed by {LEGAL_NAME}.
-            </p>
+            <p className="mt-2 text-sm text-ink-faint">Managed by {LEGAL_NAME}</p>
           </InfoCard>
 
           <InfoCard title="Before you write">

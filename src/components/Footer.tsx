@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { BrandMark } from "./BrandMark";
 import {
   ADDRESS,
   EMAIL,
@@ -9,6 +8,7 @@ import {
   SITE_NAME,
   SUPPORT_HOURS,
 } from "@/lib/site";
+import { BrandMark } from "./BrandMark";
 
 const COLLECTION_LINKS = [
   { label: "Sports Cards", href: "/collections/sports-cards" },
@@ -40,9 +40,7 @@ export function Footer() {
             Authentic sports cards and gaming collectibles. Competitive prices, fast
             shipping, and dedicated service for collectors.
           </p>
-          <p className="mt-3 max-w-xs text-xs text-ink-faint">
-            {SITE_NAME} is managed by {LEGAL_NAME}.
-          </p>
+          <p className="mt-3 text-sm text-ink-faint">Managed by {LEGAL_NAME}</p>
         </div>
 
         <FooterColumn title="Collections" links={COLLECTION_LINKS} />
@@ -70,7 +68,7 @@ export function Footer() {
       <div className="border-t border-line">
         <div className="wrap flex flex-col items-center justify-between gap-4 py-5 sm:flex-row">
           <p className="text-xs text-ink-faint">
-            © {new Date().getFullYear()} {SITE_NAME}. Managed by {LEGAL_NAME}.
+            © {new Date().getFullYear()} {LEGAL_NAME} · {SITE_NAME}
           </p>
           <ul className="flex flex-wrap items-center gap-2">
             {PAYMENTS.map((p) => (

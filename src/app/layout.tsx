@@ -36,7 +36,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en-GB"
+      lang="en"
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${bebas.variable}`}
     >

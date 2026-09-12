@@ -45,7 +45,7 @@ export function Hero() {
 
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/15 pt-6">
             {[
-              ["4.8\u2605", "1,847 reviews"],
+              ["4.8★", "1,847 reviews"],
               ["30-Day", "returns window"],
               ["Free", "shipping over $75"],
             ].map(([value, label]) => (
