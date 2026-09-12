@@ -342,7 +342,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "ember-dynasty-booster-box",
     title: "Ember Dynasty Booster Box",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 347.96,
     compareAt: 444.95,
     categories: ["pokemon", "boxes-cases"],
@@ -365,7 +365,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "ember-dynasty-elite-trainer-box",
     title: "Ember Dynasty Elite Trainer Box",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 54.99,
     categories: ["pokemon"],
     art: "ember",
@@ -386,7 +386,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "celestial-rift-booster-bundle",
     title: "Celestial Rift Booster Bundle",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 28.5,
     categories: ["pokemon"],
     art: "tide",
@@ -407,7 +407,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "celestial-rift-ultra-premium-collection",
     title: "Celestial Rift Ultra Premium Collection",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 367.49,
     categories: ["pokemon", "pre-orders"],
     art: "prism",
@@ -429,7 +429,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "verdant-hollow-booster-box",
     title: "Verdant Hollow Booster Box",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 303.96,
     compareAt: 499.95,
     categories: ["pokemon", "boxes-cases"],
@@ -451,7 +451,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "tidecaller-premium-collection",
     title: "Tidecaller Premium Collection",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 142.49,
     categories: ["pokemon", "pre-orders"],
     art: "tide",
@@ -475,7 +475,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "reality-fracture-collector-booster-box",
     title: "Reality Fracture Collector Booster Box",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 262.49,
     categories: ["magic", "boxes-cases"],
     art: "void",
@@ -497,7 +497,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "reality-fracture-play-booster-box",
     title: "Reality Fracture Play Booster Box",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 84.09,
     categories: ["magic", "boxes-cases"],
     art: "void",
@@ -518,7 +518,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "ironroot-commander-deck-bundle",
     title: "Ironroot Commander Deck Bundle",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 148.49,
     categories: ["magic"],
     art: "verdant",
@@ -539,7 +539,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "lorewright-draft-night-kit",
     title: "Lorewright Draft Night Kit",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 131.39,
     compareAt: 164.99,
     categories: ["magic"],
@@ -561,7 +561,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "starfall-league-collector-box",
     title: "Starfall League Collector Booster Box",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 405.74,
     categories: ["magic", "boxes-cases"],
     art: "prism",
@@ -582,7 +582,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "driftwood-fables-booster-box",
     title: "Driftwood Fables Booster Box",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 52.5,
     categories: ["magic"],
     art: "tide",
@@ -823,7 +823,7 @@ export const PRODUCTS: Product[] = [
   {
     handle: "glasswing-ascent-booster-box-preorder",
     title: "Glasswing Ascent Booster Box",
-    brand: "Card Exchange Club",
+    brand: "Card TCG Exchange",
     price: 129.99,
     categories: ["pre-orders", "magic"],
     art: "tide",
